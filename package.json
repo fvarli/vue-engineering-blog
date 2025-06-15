@@ -7,11 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "tailwind:init": "tailwindcss init -p",
+    "build:css": "tailwindcss -i src/assets/tailwind.css -o src/assets/main.css --watch"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "nuxt": "^3.17.5",
+    "pinia": "^3.0.3",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
   }
 }
